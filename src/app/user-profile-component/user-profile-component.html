@@ -1,0 +1,18 @@
+<div class="trainer-card-container">
+    <aside class="trainer-sidebar">
+    <div class="avatar-circle">
+        <img src="assets/trainer-avatar.png" alt="Entrenador">
+    </div>
+    <nav class="trainer-menu">
+        <!-- Estos enlaces cargan los hijos -->
+        <a routerLink="ajustes" routerLinkActive="active-tab">⚙️ Ajustes de Perfil</a>
+        <a routerLink="seguridad" routerLinkActive="active-tab">🔒 Seguridad PokéID</a>
+    </nav>
+    </aside>
+
+    <main class="trainer-content">
+        <!-- AQUÍ se mostrarán SettingsComponent o SecurityComponent -->
+            <p>¡ESTÁS EN EL PERFIL!</p>
+        <router-outlet></router-outlet>
+    </main>
+</div>

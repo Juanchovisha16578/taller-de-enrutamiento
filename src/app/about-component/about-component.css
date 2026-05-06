@@ -1,0 +1,92 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #e0e0e0;
+    min-height: 90vh;
+}
+
+.notebook-page {
+    background: #fff;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    border-left: 20px solid #ef5350; /* Margen rojo tipo carpeta */
+}
+
+.about-header h1 {
+    font-family: 'Bungee', cursive;
+    color: #333;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #ddd;
+}
+
+.date {
+    font-family: monospace;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.definition {
+    margin-top: 30px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Efecto de nota adhesiva */
+.sticky-note {
+    background: #fff9c4;
+    padding: 20px;
+    margin-bottom: 30px;
+    transform: rotate(-1deg);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.05);
+    border-left: 5px solid #fbc02d;
+}
+
+.sticky-note h3 {
+    margin-top: 0;
+    color: #f57f17;
+}
+
+/* Grid de detalles */
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.detail-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.detail-item:hover {
+    transform: translateY(-5px);
+    background: #fff3f3;
+}
+
+.detail-item h4 {
+    margin: 10px 0;
+    color: #ef5350;
+}
+
+.btn-return {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-return:hover {
+    background: #ef5350;
+}

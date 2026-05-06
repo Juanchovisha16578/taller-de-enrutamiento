@@ -1,0 +1,117 @@
+:host {
+    --pika-yellow: #FFDE00;
+    --pika-red: #FF0000;
+    --pika-black: #333333;
+    --pika-brown: #A1602A;
+}
+
+.pika-container {
+    min-height: 90vh;
+    background-color: #fdfdfd;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Card estilo cara de Pikachu */
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.pika-card {
+    background-color: var(--pika-yellow);
+    width: 100%;
+    max-width: 800px;
+    padding: 4rem 2rem;
+    border-radius: 30px;
+    position: relative;
+    border: 6px solid var(--pika-black);
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 10px 10px 0px var(--pika-black);
+}
+
+/* Mejillas rojas */
+.cheek {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: var(--pika-red);
+    border-radius: 50%;
+    bottom: 20px;
+    opacity: 0.8;
+}
+
+.cheek.left { left: 30px; }
+.cheek.right { right: 30px; }
+
+.pika-title {
+    font-size: 3rem;
+    color: var(--pika-black);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px white;
+}
+
+.pika-subtitle {
+    font-size: 1.2rem;
+    color: var(--pika-black);
+    margin-bottom: 30px;
+}
+
+/* Botones con estilo eléctrico */
+.pika-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-thunder {
+    background-color: var(--pika-black);
+    color: var(--pika-yellow);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-thunder:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--pika-yellow);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--pika-black);
+    color: var(--pika-black);
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Tarjetas secundarias */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-box {
+    background: white;
+    border-left: 10px solid var(--pika-yellow);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.info-box h3 {
+    color: var(--pika-brown);
+    margin-top: 0;
+}

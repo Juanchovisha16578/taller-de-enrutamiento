@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLinkWithHref } from '@angular/router';
+import { PokemonDetailComponent } from "./pokemon-detail-component/pokemon-detail-component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, PokemonDetailComponent, RouterLinkWithHref],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
