@@ -1,16 +1,15 @@
 <!-- Navegación entre rutas -->
 <div class="pokemon-detail-container">
     <div class="pokemon-card">
-    <!-- Mostramos el nombre dinámico -->
-    <h2 class="pokemon-name">Estás viendo a: {{ nombrePokemon | titlecase }}</h2>
+        <!-- Mostramos el nombre dinámico -->
+        <h2 class="pokemon-name">Estás viendo a: {{ nombrePokemon | titlecase }}</h2>
 
-    <div class="pokemon-image-box">
-        <!-- Mostramos la imagen dinámica -->
-        <img [src]="imagenPokemon" [alt]="nombrePokemon" class="fade-in">
+        <div class="pokemon-image-box">
+            <!-- Mostramos la imagen dinámica -->
+            <img [src]="imagenPokemon" [alt]="nombrePokemon" class="fade-in">
+        </div>
     </div>
-
-    <button routerLink="/inicio" class="btn-return">Regresar al mapa</button>
-    </div>
+<button routerLink="/" class="btn-return">Regresar al mapa</button>
 </div>
 <!-- AQUÍ es donde Angular inyectará el componente de la ruta -->
 <router-outlet></router-outlet>

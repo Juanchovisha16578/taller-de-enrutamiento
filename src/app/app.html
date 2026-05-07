@@ -1,8 +1,12 @@
 <nav class="pk-nav">
     <div class="pk-logo">PokéApp</div>
     <ul class="pk-links">
+        <!--No usamos <a href="..."> porque eso recarga toda la página y perderiamos el estado de la aplicación
+            Por eso usamos routerLink y a ocntinuación el path en el cúal queremos ingresar-->
         <a routerLink="/inicio">Ir a Inicio</a>
         <a routerLink="/nosotros" routerLinkActive="active">¿Qué es un Pokémon?</a>
+        <!--Esta línea de código sale del ejemplo 2, y cuando damos clic nos arroja la imagen del pokemon
+        -->
         <a [routerLink]="['/pokemon', 'charmander']">Ver Charmander</a>
         <a routerLink="**">Pokedéx</a>
     </ul>

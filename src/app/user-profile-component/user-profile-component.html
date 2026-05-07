@@ -1,10 +1,12 @@
 <div class="trainer-card-container">
     <aside class="trainer-sidebar">
     <div class="avatar-circle">
-        <img src="assets/trainer-avatar.png" alt="Entrenador">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2360853-3aff-4eac-bdcc-60c42ae8df8a/d5wdou2-7663bbec-3ce7-4a2d-ab90-ce12569b4a6c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9lMjM2MDg1My0zYWZmLTRlYWMtYmRjYy02MGM0MmFlOGRmOGEvZDV3ZG91Mi03NjYzYmJlYy0zY2U3LTRhMmQtYWI5MC1jZTEyNTY5YjRhNmMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.NZ79Xiqt1d3OAVyAozZOLVhZDi5cbyK_YOWzmJSGqAA" alt="Entrenador">
     </div>
     <nav class="trainer-menu">
         <!-- Estos enlaces cargan los hijos -->
+        <!--Los ajustes se ven reflejados ya directamente en el UserProfileComponent es mas:
+        El Router Outlet: Es el "agujero" en el HTML del padre. Si haces clic en "Seguridad", Angular no quita el UserProfileComponent (el carnet se queda ahí), solo cambia lo que hay dentro del router-outlet por el SecurityComponent.-->
         <a routerLink="ajustes" routerLinkActive="active-tab">⚙️ Ajustes de Perfil</a>
         <a routerLink="seguridad" routerLinkActive="active-tab">🔒 Seguridad PokéID</a>
     </nav>

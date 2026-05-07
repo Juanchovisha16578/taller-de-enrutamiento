@@ -1,0 +1,89 @@
+/* Contenedor principal del formulario */
+.settings-view {
+    animation: slideIn 0.5s ease-out;
+    color: #333;
+}
+
+.settings-view h2 {
+    font-family: 'Bungee', cursive; /* O una fuente sans-serif gruesa */
+    color: #2c3e50;
+    border-bottom: 3px solid #ef5350; /* Rojo Pokémon */
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+/* Grupos de entrada (Label + Input/Select) */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilos comunes para Input y Select */
+.input-group input, 
+.input-group select {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Efecto Focus al hacer clic */
+.input-group input:focus, 
+.input-group select:focus {
+    border-color: #3b4cca; /* Azul Pokémon */
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(59, 76, 202, 0.2);
+}
+
+/* Botón de Guardar */
+.btn-save {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #4caf50; /* Verde éxito */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 0 #388e3c; /* Sombra sólida tipo retro */
+}
+
+.btn-save:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.btn-save:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

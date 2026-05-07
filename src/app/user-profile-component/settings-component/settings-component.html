@@ -1,8 +1,9 @@
-<div class="settings-view">
+<div class="settings-view" [formGroup]="trainerForm">
     <h2>Ajustes de Entrenador</h2>
+
     <div class="input-group">
-    <label>Nombre de Usuario</label>
-    <input type="text" placeholder="AshKetchum123">
+        <label>Nombre de Usuario</label>
+        <input type="text" placeholder="AshKetchum123">
     </div>
     <div class="input-group">
     <label>Región de Origen</label>
@@ -12,5 +13,7 @@
         <option>Hoenn</option>
     </select>
     </div>
-    <button class="btn-save">Guardar Cambios</button>
+    <button class="btn-save" (click)="saveChanges()" [disabled]="trainerForm.invalid">
+        Guardar Cambios
+    </button>
 </div>

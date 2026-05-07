@@ -1,1 +1,27 @@
-<p>security-component works!</p>
+<!-- 1. Vinculas el grupo completo -->
+<form [formGroup]="securityForm" (ngSubmit)="updatePassword()">
+    <div class="input-group">
+        <label>Contraseña Actual</label>
+        <!-- 2. Vinculas cada input con su nombre lógico -->
+        <input type="password" formControlName="currentPassword">
+    </div>
+
+    <div class="input-group">
+        <label>Nueva Contraseña</label>
+        <input type="password" formControlName="newPassword">
+        <!-- 3. Mostrar errores dinámicos -->
+        <small *ngIf="securityForm.get('newPassword')?.errors?.['minlength']" style="color: red;">
+            Mínimo 8 caracteres.
+        </small>
+    </div>
+
+    <div class="input-group">
+        <label>Confirmar Contraseña</label>
+        <input type="password" formControlName="confirmPassword">
+        <small *ngIf="securityForm.hasError('mismatch') && securityForm.get('confirmPassword')?.touched" style="color: red;">
+        Las contraseñas no coinciden.
+        </small>
+    </div>
+
+    <button type="submit" [disabled]="securityForm.invalid">Actualizar Contraseña</button>
+</form>

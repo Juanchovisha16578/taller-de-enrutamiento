@@ -19,7 +19,7 @@ export class PokemonDetailComponent implements OnInit {
     this.nombrePokemon = this.route.snapshot.paramMap.get('nombre');
 
     // 2. Construimos la URL de la imagen (usando la estructura oficial de la PokéAPI)
-    // Nota: Esto es un ejemplo, si tienes tu propia API usa la URL de tu servidor
+    // Nota: Esto es un ejemplo, si tenemos nuesrta propia API que usa la URL del servidor
     if (this.nombrePokemon) {
       this.imagenPokemon = `https://img.pokemondb.net/artwork/large/${this.nombrePokemon.toLowerCase()}.jpg`;
     }
